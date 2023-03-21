@@ -1,0 +1,141 @@
+html{
+    color: #fff;
+    max-height: 100vh;
+}
+
+body{
+    background: var(--violet) url(../images/bg-desktop.png) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.logo img{
+    width: 250px;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 90px;
+    gap: 30px;
+    height: 60%;
+}
+
+.container .infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container .infos h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    width: 70%;
+}
+
+.container .infos p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20.1px;
+    width: 80%;
+}
+
+.container .infos button{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.container .infos button a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.container .infos button:hover{
+    color: #fff;
+    background-color: var(--soft-magenta);
+}
+
+.container .infos button a:hover{
+    color: #fff;
+}
+
+.container .infos .socials ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container .infos ul li{
+    margin: 10px;
+    padding: 2px;
+    color: #fff;
+}
+
+.container .infos ul li a{
+    color: #fff;
+    border: #fff 1px solid;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.container .infos ul li a:hover{
+    color: var(--soft-magenta);
+}
+
+@media(max-width:725px){
+    body{
+        display: block;
+        background: var(--violet) url(../images/bg-desktop.png) ;
+        background-size: cover;
+    }
+
+    .logo img{
+        margin: 20px;
+        width: 200px;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .infos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container img{
+        width: 350px;
+    }
+
+    .container .infos h1{
+        font-size: 25px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .container .infos p{
+        font-size: 16px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .container .infos button{
+        width: 250px;
+        margin-bottom: 40px;
+    }
+
+}
